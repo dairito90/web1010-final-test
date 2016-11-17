@@ -1,0 +1,13 @@
+Dairon Rodriguez: WEB1010 Final Exam
+
+Part 1: 59/75 pts
+- step 1: 15/15 pts
+- step 2: 15/15 pts
+- step 3: 7/15 pts. Form sends as soon as page loads, not when click on button
+- step 4: 15/15 pts
+- step 5: 7/15 pts. alert fires when page loads instead of when user sends form
+
+Part 2: 19/75 pts.
+Notes: See your web1010final.js file to view points (pts) and solutions.
+
+Total grade: 59/75 + 19/75 = 78/150 pts. 52%.

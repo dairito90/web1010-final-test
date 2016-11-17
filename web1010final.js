@@ -5,26 +5,69 @@ for (var i = 0; i < '5'; i+;) {
  console.log('i')
 }
 +
+
+// 0 pts. Correct answer:
+for (var i = 0; i < 5; i++) {
+    console.log('i');
+}
+
+
+
+
+
+
 //Question 1.2
 //Find the error in the following conditional:
- if false{
-   consola.log("hello")
- }else{
-   console.log("hasta luego")
- }
+if false{
+  consola.log("hello")
+}else{
+  console.log("hasta luego")
+}
 console.log("hello")
+
+// 3/5 pts. Correct Answer:
+if (false) {
+  console.log("hello")
+}else{
+  console.log("hasta luego")
+}
+
+
+
+
+
+
 //Question 1.3
 //Find the error in the following code:
 var x = 15;
 if (x > 10){
    console.log(x is greater than ten);
 }
+// 0/5 pts. Correct answer:
+var x = 15;
+if (x > 10){
+   console.log("x is greater than ten");
+}
+
+
+
+
 
 //Question 1.4
 //Find the error in the following code:
 var y = 27;
 if y === 27
   console.log(27);
+// 0/5 pts. Correct answer:
+var y = 27;
+if (y === 27) {
+    console.log(27);
+}
+
+
+
+
+
 
 //Question 2.1
 //What does will the console output when the following is entered.
@@ -35,11 +78,24 @@ c
 //c. "11"
 //d. 11
 
+// 5/5 pts.
+
+
+
+
+
+
 //Question 2.2
 //Find the errors in the following
 var name = "Roberto"
 var time =3;
 //name"+ said "He's comming late.", the meeting is still at " + time +
+// 0/5 pts.
+
+
+
+
+
 
 //Question 2.3
 //What is the value of x?
@@ -49,6 +105,14 @@ var b = 5;
 var c = 10;
 var x = b*c + a;
 (5*10 + "thug life")
+// 3/5 pts. Correct answer:
+"50thug life"
+
+
+
+
+
+
 //Question 2.4
 //What is the value of x?
 var x = 10;
@@ -57,6 +121,12 @@ x = x*y;
 var z = 4;
 x = x*z;
 x = 240;
+// 5/5 pts.
+
+
+
+
+
 
 //Question 3.1
 //Write a sentence that uses the following variables
@@ -64,26 +134,59 @@ var firstName = "John"
 var lastName = "Martinez"
 var city = "Miami"
 "firstName" + "+" "lastName" "+" +" Miami"
+// 1/5 pts. Correct answer:
+firstname + " " + lastName + " lives in " + city
+// output:
+"John Martinez lives in Miami"
+
+
+
+
+
 
 //Question 3.2
 //Write a sentence that uses the following variables
  var totalPower = 32
  var generator = 1
 totalPower + generator;
+// 0/5 pts. Correct answer:
+"Generator #" + generator + " has " + totalPower + "MW of power."
+// output:
+"Generator #1 has 32MW of power."
+
+
+
+
+
 
 //Question 3.3
 //What is the value of str3?
-
 var str1 = "que bola acere";
 var str2 = "sup dawg";
 var str3 = str1+"is similar to"+str2+" in spanish.";
 var str3 = true;
+// 0/5 pts. Correct answer:
+"que bola acereis similar tosup dawg in spanish."
+
+
+
+
+
+
+
 
 //Question 3.4
 //Use console.log to output the statement: "Hi! My name is Slim Shady." using the following two variables:
 var greeting = "Hi!";
 var name = "Slim Shady";
 console.log(greeting + "+" + name);
+// 2/5 pts. Correct answer:
+console.log(greeting + " My name is " + name + ".");
+
+
+
+
+
 
 //Question 4
 /*
@@ -108,10 +211,31 @@ var years = 30;
 if ( money * years * 0.05 ){
   console.log()
   else{
-    
+
   }
 }
-//Extra credit
+// 0/5 pts. Correct answer:
+var money = 1000;
+var interest = 0.05;
+var years = 30;
+for(var i = 1; i <= years; i++) {
+    money = money * (interest + 1);
+    console.log("Al terminar el an~o " + i + ", usted tiene $" + money);
+}
+// Output:
+"Al terminar el an~o 1, usted tiene $1050"
+"Al terminar el an~o 2, usted tiene $1102.5"
+"Al terminar el an~o 3, usted tiene $1157.625"
+...
+"Al terminar el an~o 30, usted tiene $4321.94"
+
+
+
+
+
+
+
+// Question 5.1
 /*
 Dadas tres variables, escriba un programa que muestre (en la consola) "Usted debe comprar un carro nuevo" solamente si la eddad del carro que tiene (carAge) es mayor que 10, el millaje (mileage) es mayor que 150,000, y si la marca es Kia. De otra manera, su programa debe mostrar "Espere un poco, sea frugal."
 
@@ -122,6 +246,13 @@ var mileage = 150000;
 var brand = "Kia";
 
 if (carAge > mileage = Kia         ){
+  console.log("You should buy a new car");
+}
+else{
+  console.log("Hold off a bit, be frugal.");
+}
+// 0/5 pts. Correct answer:
+if (carAge > 10 && mileage > 150000) {
   console.log("You should buy a new car");
 }
 else{
@@ -149,6 +280,27 @@ for (; ; ) {
 
 
 }
+// 0 pts. Correct answer:
+var totalPools = 12
+var currentPool = 1
+var smallVolume = 1000
+var largeVolume = 3000
+var totalVolume = 0
+for (currentPool; currentPool <= totalPools; currentPool++) {
+    if(currentPool <= 7) {
+        totalVolume += smallVolume;
+    }
+    else {
+        totalVolume += largeVolume;
+    }
+}
+// Output:
+22000
+
+
+
+
+
 
 
 // Extra Credit
@@ -164,7 +316,26 @@ for ( ;   ;  ) {
 
 
 }
-
+// +0 pts. Correct answer:
+var totalPools = 12
+var currentPool = 1
+var smallVolume = 1000
+var largeVolume = 3000
+var totalVolume = 0
+for (currentPool; currentPool <= totalPools; currentPool++) {
+    if(currentPool == 2 || currentPool == 10) {
+        continue;
+        // continue stops running the code inside this loop and goes to the next iteration of the loop
+    }
+    if(currentPool <= 7) {
+        totalVolume += smallVolume;
+    }
+    else {
+        totalVolume += largeVolume;
+    }
+}
+// output:
+18000
 
 
 /*
@@ -176,3 +347,5 @@ El ingeniero sabe que manana las picsinas 2, 6, y 10 no van a trabajar.
 Ademas, la picina numero 12 la van a llenar con la mitad del volumen, para ninos pequenos.
 Adelantese y haga el reporta hoy, para que manana descanse
 */
+
+// +0 pts.
